@@ -1,3 +1,10 @@
+.Hard refresh to remove cache adding ?v=2 forces browser to ignore cache
+. STILL not removed (guaranteed fix)
+
+Add this empty favicon:
+
+<link rel="icon" href="data:," />
+
 how to add tailwind in our project folder.
 New and simple  with tailwind4:-
 1. npm install tailwindcss @tailwindcss/vite
