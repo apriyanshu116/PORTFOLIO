@@ -1,56 +1,16 @@
-.Hard refresh to remove cache adding ?v=2 forces browser to ignore cache
-. STILL not removed (guaranteed fix)
+# React + Vite
 
-Add this empty favicon:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<link rel="icon" href="data:," />
+Currently, two official plugins are available:
 
-how to add tailwind in our project folder.
-New and simple  with tailwind4:-
-1. npm install tailwindcss @tailwindcss/vite
-2. Configure the Vite Plugin :-
-   import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // Add this import
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // Add this plugin
-  ],
-})
+## React Compiler
 
-3. Import Tailwind in Your CSS in index.css
-  @import "tailwindcss";
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Expanding the ESLint configuration
 
-
-
-
-old way:-
-1. npm install -D tailwindcss postcss autoprefixer
-2. npx tailwindcss init -p
-3. change in tailwindconfig.js or created it withound command (manually create )
-/** @type {import('tailwindcss').Config}*/
-export default {
-    content:[
-        *./index.html*,
-        *./src/**/*.{js,ts,jsx,tsx}*,    
-    ],
-    theme:{
-        extend:{}
-    },
-    plugins:[],
-}
-4. index.html change with 
-@tailwind base;
-@tailwind component;
-@tailwind utilities;
-
-5. or create postcss.config.js manually 
-export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
