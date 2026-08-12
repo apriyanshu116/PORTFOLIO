@@ -12,7 +12,7 @@ export default function Resume() {
         </h1>
 
         {/* PDF Preview */}
-        <div className="w-full h-[700px] border rounded-xl shadow bg-white overflow-hidden">
+        <div className="w-full h-175 border rounded-xl shadow bg-white overflow-hidden">
           <iframe
             src={resumeUrl}
             title="Resume Preview"
