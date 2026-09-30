@@ -40,17 +40,7 @@ export default function Home() {
             </p>
 
             {/* Buttons */}
-            <div className="mt-5 flex flex-wrap justify-center md:justify-start gap-3">
-
-              <button className="px-5 py-2.5 bg-gray-900 text-white rounded-xl font-medium hover:bg-amber-500 hover:text-black transition-all duration-300 shadow-sm">
-                View Projects
-              </button>
-
-              <button className="px-5 py-2.5 border border-gray-300 bg-white text-gray-700 rounded-xl font-medium hover:border-gray-900 hover:bg-gray-100 transition-all duration-300">
-                Download Resume
-              </button>
-
-            </div>
+            
 
           </div>
         </div>
